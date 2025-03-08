@@ -1,6 +1,10 @@
 
 import '../App.css'
 import BackgroundHeading from './BackgroundHeading.tsx'
+import Footer from './Footer.tsx'
+import Header from './Header.tsx'
+import Sidebar from './Sidebar.tsx'
+import TodoList from './TodoList.tsx'
 
 export default function App() {
   
@@ -9,25 +13,14 @@ export default function App() {
     <>
       <div className="bg-[#f1d4b3] min-h-screen flex justify-center items-center flex-col">
        <BackgroundHeading/>
-        <main className='relative w-[972px] h-[636px] bg-white rounded-[8px]  grid grid-cols-[7fr_4fr] grid-rows-[59px_1fr] overflow-hidden'> 
-          <header className='col-[1/3] row-[1/2] bg-[#fbf5ed] border-l border-black/[0.08]'></header>
-        
-        
-          <ul></ul>
-
-
-          <section className='col-[2/3] row-[2/3] bg-[#fffcf9] border-l border-black/[0.08]'></section>
-
+       <main className="relative w-[972px] shadow-[0_4px_4px_rgb(0,0,0,0.08)] h-[636px] bg-[#fff] rounded-[8px] overflow-hidden grid grid-cols-[7fr_4fr] grid-rows-[59px_1fr]">
+          
+        <Header />
+        <TodoList />
+        <Sidebar />
         </main>
 
-        <footer className='flex justify-between items-center w-[972px] text-[11px] mt-[12px]'>
-            <small>
-              &copy; Copyright by VMB
-            </small>
-            <p>
-              Version <b>1.5</b>
-            </p>
-        </footer>
+        <Footer />  
       </div>
     </>
   )
