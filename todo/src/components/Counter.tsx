@@ -1,11 +1,10 @@
 
 
-export default function Counter() {
-    
+export default function Counter( {todos}:any) {
 
     return (
         <>
-            <p><b>0</b> / 0 todos completed </p>
+            <p><b>{todos.filter((todo:any) => !todo.completed).length}</b> / {todos.length} todos completed </p>
         </>
     )
 }

@@ -9,7 +9,8 @@ export default function AddTodoFourm() {
 
             <input type="text" placeholder="Add a todo" className="h-[45px] w-full border-[1px] border-[rgba(0,0,0,0.12)] rounded-[5px] ml-[0] mr-[0] my-[9px] px-[16px] py-[0] text-[14px]" />
 
-            <Button>Add to list</Button>
+            <Button> Add to list </Button>
+
         </form>
     )
 }
