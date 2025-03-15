@@ -1,5 +1,6 @@
 
 import '../App.css'
+import AddTodoForm from './AddTodoFourm.tsx'
 import BackgroundHeading from './BackgroundHeading.tsx'
 import Footer from './Footer.tsx'
 import Header from './Header.tsx'
@@ -36,6 +37,7 @@ export default function App() {
         <Header todos={todos}  />
         <TodoList  todos={todos} setTodos={setTodos}/>
         <Sidebar todos={todos} setTodos={setTodos} />
+        <AddTodoForm todos={todos} setTodos={setTodos}/>
         </main>
 
         <Footer />  
