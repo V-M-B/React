@@ -1,5 +1,5 @@
 
-export default function DeleteButton({id,setTodos}) {
+export default function DeleteButton({id,setTodos}:any) {
     
 
     return (
